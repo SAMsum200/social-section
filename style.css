@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+margin:0;
+padding:0;    
+font-family: 'Spartan', sans-serif;
+background-image: url(images/bg-pattern-bottom-desktop.svg),url(images/bg-pattern-top-desktop.svg);
+background-position: right top, left top;
+background-repeat: no-repeat;
+
+}
+
+.container{
+display: flex;
+justify-content: center;
+padding: 1% 2%;
+flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+h1{
+    font-size: 2.8rem;
+    color: hsl(300, 43%, 22%);
+    margin-bottom:1rem;
+}
+
+.reat{
+    margin-left: 2.3rem;
+    margin-right: 2rem;
+    margin-top:1rem;  
+    width: 45%;
+}
+.main-box{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 2rem;
+    width: 80%;
+    padding: 1rem 0;
+    display:flex;
+    flex-direction: row;
+    border-radius:6px;
+    align-items: center;
+}
+.stars{
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.stars img{
+    margin-right: 0.5rem;
+
+}
+.box2{
+    margin-left: 10%;
+}
+.box3{
+    margin-left: 20%;
+}
+.cards{
+margin: 2rem auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card{
+    margin: 1rem;
+    width: 33.33%;
+    padding: 1rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+.card p{
+    color: white;
+}
+.title {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.title span{
+    font-weight: 600;
+    color: white;
+}
+.title p{
+    font-weight: 300;
+    color: hsl(333, 80%, 67%);
+    font-size: 0.8rem;
+}
+.title img{
+    width: 3rem;
+    margin-right: 0.7rem;
+}
+.card2{
+position: relative;
+top: 2rem;
+}
+.card3{
+    position: relative;
+    top: 4rem;
+}
+/*responsive*/
+@media only screen and (max-width:1110px){
+    h1{
+        font-size: 2.3rem;
+    }
+    p{
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    .stars img{
+        width: 1rem;
+    }
+    .main-box{
+        margin-bottom: 1.8rem;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    span p {
+        font-size: 1rem;
+    }
+  
+}
+@media only screen and (max-width:1090px){
+    h1{
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .stars img{
+        width: 0.9rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    .main-box{
+        padding: 0.9rem 0;
+        margin-bottom: 1.6rem;
+    }
+    span{
+        font-size: 0.9rem;
+    }
+    span p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .title img{
+        width: 2.6rem;
+        margin-right: 0.6rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    .stars img{
+        width: 0.8rem;
+    }
+    h4{
+        font-size: 0.7rem;
+    }
+    .main-box{
+        padding: 0.8rem 0;
+        margin-bottom: 1.4rem;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+    span p {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:920px) {
+    body{
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right top;
+        
+    }
+    .title img{
+        width: 2.2rem;
+        margin-right: 0.5rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    
+    p{
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    .stars img{
+        width: 0.7rem;
+    }
+    h4{
+        font-size: 0.6rem;
+    }
+    .main-box{
+        padding: 0.7rem 0;
+        margin-bottom: 1.2rem;
+    }
+    span{
+        font-size: 0.7rem;
+    }
+    span p {
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:830px) {
+    body{
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right top;
+        
+    }
+    .main-box{
+        padding: 0.6rem 0;
+
+    }
+
+}
+@media only screen and (max-width:720px) {
+    body{
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right top;
+        
+    }
+  
+    header{
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .text{
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .reat{
+        margin: 1rem auto;
+        width: 90%;
+
+    }
+.main-box{
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    
+}
+.stars{
+    margin: 0 auto 0.2rem;
+    display: block;
+    
+}
+.stars img{
+    width: 1rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+p{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.cards{
+    margin: 1rem auto;
+    display: block;
+    justify-content: center;
+}
+.card, .card2, .card3{
+    margin: 0.1rem auto;
+    width: 80%;
+    
+} 
+}
+
